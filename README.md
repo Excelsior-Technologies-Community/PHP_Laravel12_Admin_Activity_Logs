@@ -1,4 +1,4 @@
-<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/60735358-608a-4155-aa1a-228f3dccc3c3" /># PHP_Laravel12_Admin_Activity_Logs
+# PHP_Laravel12_Admin_Activity_Logs
 ## Project Overview
 
 This project is a complete **Admin Activity Logs System** built using Laravel 12.
