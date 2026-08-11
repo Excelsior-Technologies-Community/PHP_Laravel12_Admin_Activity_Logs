@@ -23,14 +23,14 @@ class ActivityLog extends Model
         'old_values',
         'new_values',
         'url',
-        'method'
+        'method',
     ];
 
     protected $casts = [
         'old_values' => 'array',
         'new_values' => 'array',
         'created_at' => 'datetime',
-        'updated_at' => 'datetime'
+        'updated_at' => 'datetime',
     ];
 
     public function user(): BelongsTo
@@ -45,11 +45,19 @@ class ActivityLog extends Model
 
     public function getActionColorAttribute(): string
     {
-        return match($this->action) {
+        return match ($this->action) {
+
             'create' => 'success',
+
             'update' => 'info',
+
             'delete' => 'danger',
-            default => 'secondary'
+
+            'login' => 'primary',
+
+            'logout' => 'warning',
+
+            default => 'secondary',
         };
     }
 }
